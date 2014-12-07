@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+
+
+typedef NS_ENUM(NSInteger, YYRightButtonStyle) {
+    YYRightButtonStyleSearch,
+    YYRightButtonStyleCancel
+};
+
 @class YYSearchBar;
 
 @protocol YYSearchBarDelegate <NSObject>
 
+@optional
 // return NO 时 搜索框不获得焦点
 - (BOOL)searchBarShouldBeginEditing:(YYSearchBar *)searchBar;
 
@@ -24,18 +32,16 @@
 - (void)searchBarTextDidEndEditing:(YYSearchBar *)searchBar;
 
 /*
- *   当文本改变时被调用（包括清楚文本）
+ *   当文本改变时被调用（包括清除文本）
  *   @params searchText 改变后的文本
 */
 - (void)searchBar:(YYSearchBar *)searchBar textDidChange:(NSString *)searchText;
 
-// 当键盘上的search点击时被调用
+// 当键盘上的 search/searchBar右侧的搜索按钮 点击时被调用
 - (void)searchBarSearchButtonClicked:(YYSearchBar *)searchBar;
 
 // 当点击取消按钮时被调用
 - (void)searchBarCancelButtonClicked:(YYSearchBar *)searchBar;
-
-
 
 
 @end
@@ -47,9 +53,8 @@
 @property (nonatomic, copy) NSString *text;
 
 @property (nonatomic, retain) UIColor *backGroundColor;
-@property (nonatomic, retain) UIColor *searchFieldColor;
 
-@property (nonatomic, readwrite, retain) UIView *inputAccessoryView;
+@property (nonatomic, assign) YYRightButtonStyle rightButtonStyle;
 
 - (instancetype)initWithFrame:(CGRect)frame placeholder:(NSString *)placeholder;
 + (YYSearchBar *)searchBarWithFrame:(CGRect)frame placeholder:(NSString *)placeholder;

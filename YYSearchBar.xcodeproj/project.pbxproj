@@ -15,6 +15,15 @@
 		340804D91A31B7330077D71B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340804D71A31B7330077D71B /* LaunchScreen.xib */; };
 		340804E51A31B7330077D71B /* YYSearchBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 340804E41A31B7330077D71B /* YYSearchBarTests.m */; };
 		340804F21A31B7D20077D71B /* YYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 340804F11A31B7D20077D71B /* YYSearchBar.m */; };
+		344847741A32E7A9009E737E /* icon_MagnifyingGlass_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3448476E1A32E7A9009E737E /* icon_MagnifyingGlass_black@2x.png */; };
+		344847751A32E7A9009E737E /* icon_MagnifyingGlass_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 3448476F1A32E7A9009E737E /* icon_MagnifyingGlass_gray.png */; };
+		344847761A32E7A9009E737E /* icon_MagnifyingGlass_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344847701A32E7A9009E737E /* icon_MagnifyingGlass_gray@2x.png */; };
+		344847771A32E7A9009E737E /* icon_MagnifyingGlass_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 344847711A32E7A9009E737E /* icon_MagnifyingGlass_white.png */; };
+		344847781A32E7A9009E737E /* icon_MagnifyingGlass_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344847721A32E7A9009E737E /* icon_MagnifyingGlass_white@2x.png */; };
+		344847791A32E7A9009E737E /* icon_MagnifyingGlass_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 344847731A32E7A9009E737E /* icon_MagnifyingGlass_black.png */; };
+		3448477C1A32ED8E009E737E /* YYSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3448477B1A32ED8E009E737E /* YYSearchField.m */; };
+		3448477F1A343B09009E737E /* YYSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3448477E1A343B09009E737E /* YYSearchController.m */; };
+		344847821A347608009E737E /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344847811A347608009E737E /* ResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +52,18 @@
 		340804E41A31B7330077D71B /* YYSearchBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSearchBarTests.m; sourceTree = "<group>"; };
 		340804F01A31B7D20077D71B /* YYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSearchBar.h; sourceTree = "<group>"; };
 		340804F11A31B7D20077D71B /* YYSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSearchBar.m; sourceTree = "<group>"; };
+		3448476E1A32E7A9009E737E /* icon_MagnifyingGlass_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_MagnifyingGlass_black@2x.png"; sourceTree = "<group>"; };
+		3448476F1A32E7A9009E737E /* icon_MagnifyingGlass_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_MagnifyingGlass_gray.png; sourceTree = "<group>"; };
+		344847701A32E7A9009E737E /* icon_MagnifyingGlass_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_MagnifyingGlass_gray@2x.png"; sourceTree = "<group>"; };
+		344847711A32E7A9009E737E /* icon_MagnifyingGlass_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_MagnifyingGlass_white.png; sourceTree = "<group>"; };
+		344847721A32E7A9009E737E /* icon_MagnifyingGlass_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_MagnifyingGlass_white@2x.png"; sourceTree = "<group>"; };
+		344847731A32E7A9009E737E /* icon_MagnifyingGlass_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_MagnifyingGlass_black.png; sourceTree = "<group>"; };
+		3448477A1A32ED8E009E737E /* YYSearchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSearchField.h; sourceTree = "<group>"; };
+		3448477B1A32ED8E009E737E /* YYSearchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSearchField.m; sourceTree = "<group>"; };
+		3448477D1A343B09009E737E /* YYSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSearchController.h; sourceTree = "<group>"; };
+		3448477E1A343B09009E737E /* YYSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSearchController.m; sourceTree = "<group>"; };
+		344847801A347608009E737E /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		344847811A347608009E737E /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +148,8 @@
 			children = (
 				340804CF1A31B7330077D71B /* ViewController.h */,
 				340804D01A31B7330077D71B /* ViewController.m */,
+				344847801A347608009E737E /* ResultsViewController.h */,
+				344847811A347608009E737E /* ResultsViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -134,10 +157,28 @@
 		340804EF1A31B7940077D71B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3448476D1A32E7A9009E737E /* searchIcon */,
 				340804F01A31B7D20077D71B /* YYSearchBar.h */,
 				340804F11A31B7D20077D71B /* YYSearchBar.m */,
+				3448477A1A32ED8E009E737E /* YYSearchField.h */,
+				3448477B1A32ED8E009E737E /* YYSearchField.m */,
+				3448477D1A343B09009E737E /* YYSearchController.h */,
+				3448477E1A343B09009E737E /* YYSearchController.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		3448476D1A32E7A9009E737E /* searchIcon */ = {
+			isa = PBXGroup;
+			children = (
+				3448476E1A32E7A9009E737E /* icon_MagnifyingGlass_black@2x.png */,
+				3448476F1A32E7A9009E737E /* icon_MagnifyingGlass_gray.png */,
+				344847701A32E7A9009E737E /* icon_MagnifyingGlass_gray@2x.png */,
+				344847711A32E7A9009E737E /* icon_MagnifyingGlass_white.png */,
+				344847721A32E7A9009E737E /* icon_MagnifyingGlass_white@2x.png */,
+				344847731A32E7A9009E737E /* icon_MagnifyingGlass_black.png */,
+			);
+			path = searchIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +261,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344847771A32E7A9009E737E /* icon_MagnifyingGlass_white.png in Resources */,
+				344847741A32E7A9009E737E /* icon_MagnifyingGlass_black@2x.png in Resources */,
+				344847761A32E7A9009E737E /* icon_MagnifyingGlass_gray@2x.png in Resources */,
+				344847751A32E7A9009E737E /* icon_MagnifyingGlass_gray.png in Resources */,
 				340804D41A31B7330077D71B /* Main.storyboard in Resources */,
+				344847791A32E7A9009E737E /* icon_MagnifyingGlass_black.png in Resources */,
 				340804D91A31B7330077D71B /* LaunchScreen.xib in Resources */,
+				344847781A32E7A9009E737E /* icon_MagnifyingGlass_white@2x.png in Resources */,
 				340804D61A31B7330077D71B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,9 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				340804D11A31B7330077D71B /* ViewController.m in Sources */,
+				344847821A347608009E737E /* ResultsViewController.m in Sources */,
 				340804F21A31B7D20077D71B /* YYSearchBar.m in Sources */,
 				340804CE1A31B7330077D71B /* AppDelegate.m in Sources */,
+				3448477C1A32ED8E009E737E /* YYSearchField.m in Sources */,
 				340804CB1A31B7330077D71B /* main.m in Sources */,
+				3448477F1A343B09009E737E /* YYSearchController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +484,7 @@
 				340804EA1A31B7330077D71B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		340804EB1A31B7330077D71B /* Build configuration list for PBXNativeTarget "YYSearchBarTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +493,7 @@
 				340804ED1A31B7330077D71B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
