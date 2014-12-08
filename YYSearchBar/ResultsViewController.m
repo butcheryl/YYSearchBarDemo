@@ -9,8 +9,9 @@
 #import "ResultsViewController.h"
 
 
-@interface ResultsViewController ()
-
+@interface ResultsViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *searchData;
 @end
 
 @implementation ResultsViewController
@@ -19,12 +20,39 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 40)];
-    label.text = @"ResultsViewController";
-    [self.view addSubview:label];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)) style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.view addSubview:self.tableView];
+    
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.searchData.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.textLabel.text = self.searchData[indexPath.row];
+    return cell;
 }
 - (void)updateSearchResultsForSearchController:(YYSearchController *)searchController {
-    NSLog(@"Input Content: %@", searchController.searchBar.text);
+    NSString *searchStr = searchController.searchBar.text;
+
+//    // 使用 NSPredicate 来过滤想要的结果
+//    NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"self contains[c] %@", searchStr];
+//    self.searchData = [self.sourceData filteredArrayUsingPredicate:filterPredicate];
+
+    // 使用 循环 来过滤想要的结果
+    NSMutableArray *searchResultArray = [@[] mutableCopy];
+    for (NSString *str in self.sourceData) {
+        if ([str rangeOfString:searchStr].location != NSNotFound) {
+            [searchResultArray addObject:str];
+        }
+    }
+    self.searchData = searchResultArray;
+    
+    // 获取到搜索结果数据后要刷新tableView
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

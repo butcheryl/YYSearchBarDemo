@@ -11,4 +11,6 @@
 
 @interface ResultsViewController : UIViewController<YYSearchResultsUpdating>
 
+@property (nonatomic, retain) NSArray *sourceData;
+
 @end

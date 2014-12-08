@@ -147,7 +147,6 @@
         [self.delegate searchBarTextDidEndEditing:self];
     }
 }
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self.searchField resignFirstResponder];
     if ([self.delegate respondsToSelector:@selector(searchBarSearchButtonClicked:)]) {
@@ -162,6 +161,7 @@
 }
 #pragma mark - rightButtonAction
 - (void)rightButtonClicked:(UIButton *)button {
+    
     switch (_rightButtonStyle) {
         case YYRightButtonStyleCancel:
             if ([self.delegate respondsToSelector:@selector(searchBarCancelButtonClicked:)]) {
@@ -173,6 +173,7 @@
                 [self.delegate searchBarSearchButtonClicked:self];
             }
         default:
+            [self.searchField resignFirstResponder];
             break;
     }
 }

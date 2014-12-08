@@ -18,11 +18,13 @@
     if (self = [super initWithFrame:frame]) {
         
         self.returnKeyType = UIReturnKeySearch;
-        
+        self.enablesReturnKeyAutomatically = YES; //这里设置为无文字就灰色不可点
+        self.spellCheckingType = UITextSpellCheckingTypeNo;
         self.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_MagnifyingGlass_gray"]];
         self.leftViewMode = UITextFieldViewModeAlways;
         self.clearButtonMode = UITextFieldViewModeWhileEditing | UITextFieldViewModeUnlessEditing;
         self.borderStyle = UITextBorderStyleRoundedRect;
+        
         self.backgroundColor = [UIColor whiteColor];
         
         [self changeSearchFieldStyle:YYSearchFieldViewStyleCenter];
